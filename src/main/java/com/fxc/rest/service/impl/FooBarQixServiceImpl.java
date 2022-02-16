@@ -41,7 +41,7 @@ public class FooBarQixServiceImpl implements FooBarQixService {
         for (char digit : String.valueOf(number).toCharArray()) {
             switch(digit) {
             	case '0':
-            		result = isV2 ? Utils.addStar(result) : "";
+            		result = isV2 ? Utils.addStar(result) : result;
             		break;
                 case '3': 
                     result = Utils.addFoo(result);
